@@ -1,0 +1,27 @@
+{
+  "aboutMe": {
+    "title": "About Me",
+    "description": "I am a creative developer passionate about 3D web experiences."
+  },
+  "education": {
+    "title": "Education",
+    "degree": "Bachelor of Science in Computer Science",
+    "university": "Sample University"
+  },
+  "techStack": {
+    "title": "Tech Stack",
+    "description": "Technologies and tools I use."
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "A selection of my best work."
+  },
+  "publications": {
+    "title": "Publications",
+    "description": "Research and articles published."
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Get in touch with me."
+  }
+}

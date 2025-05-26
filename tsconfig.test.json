@@ -1,0 +1,9 @@
+{
+  "extends": "./frontend/tsconfig.app.json",
+  "compilerOptions": {
+    "types": ["jest", "@testing-library/jest-dom", "node"],
+    "module": "CommonJS",
+    "verbatimModuleSyntax": false
+  },
+  "include": ["tests"]
+} 

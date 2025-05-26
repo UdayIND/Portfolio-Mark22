@@ -1,0 +1,23 @@
+# Node
+node_modules/
+frontend/node_modules/
+
+# Python
+venv/
+backend/venv/
+
+# Build output
+dist/
+frontend/dist/
+
+# Environment files
+.env
+.env.*
+
+# OS/Editor
+.DS_Store
+*.swp
+
+# Test/coverage
+coverage/
+*.log
