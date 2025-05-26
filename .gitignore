@@ -21,3 +21,6 @@ frontend/dist/
 # Test/coverage
 coverage/
 *.log
+
+# Dummy placeholder assets
+frontend/src/assets/**/*placeholder*
