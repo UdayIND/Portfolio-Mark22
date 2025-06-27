@@ -23,5 +23,9 @@
   "contact": {
     "title": "Contact",
     "description": "Get in touch with me."
+  },
+  "blogs": {
+    "title": "ブログ",
+    "description": "考え、洞察、経験"
   }
 }

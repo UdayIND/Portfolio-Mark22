@@ -1,35 +1,65 @@
 import * as React from "react";
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import AboutMe from "./components/AboutMe";
+import Education from "./components/Education";
+import Projects from "./components/Projects";
+import Publications from "./components/Publications";
+import TechStack from "./components/TechStack";
+import Contact from "./components/Contact";
+import Blogs from "./components/Blogs";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [showBlogs, setShowBlogs] = React.useState(false);
+
+  if (showBlogs) {
+    return (
+      <div className="portfolio-app">
+        <nav style={{ position: 'fixed', top: '1rem', right: '1rem', zIndex: 1000 }}>
+          <button 
+            onClick={() => setShowBlogs(false)}
+            style={{
+              padding: '0.5rem 1rem',
+              border: 'none',
+              background: '#646cff',
+              color: 'white',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '0.875rem'
+            }}
+          >
+            ← Portfolio
+          </button>
+        </nav>
+        <Blogs />
+      </div>
+    );
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <div className="portfolio-app">
+      <nav style={{ position: 'fixed', top: '1rem', right: '1rem', zIndex: 1000 }}>
+        <button 
+          onClick={() => setShowBlogs(true)}
+          style={{
+            padding: '0.5rem 1rem',
+            border: 'none',
+            background: '#646cff',
+            color: 'white',
+            borderRadius: '4px',
+            cursor: 'pointer',
+            fontSize: '0.875rem'
+          }}
+        >
+          Blog
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      </nav>
+      <AboutMe />
+      <Education />
+      <Projects />
+      <Publications />
+      <TechStack />
+      <Contact />
+    </div>
   );
 }
 

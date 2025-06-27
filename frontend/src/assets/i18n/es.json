@@ -23,5 +23,9 @@
   "contact": {
     "title": "Contact",
     "description": "Get in touch with me."
+  },
+  "blogs": {
+    "title": "Blog",
+    "description": "Pensamientos, ideas y experiencias"
   }
 }
